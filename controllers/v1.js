@@ -1,4 +1,4 @@
-const player = require('./v1/player/player');
+const player = require('./v1/player');
 
 module.exports = Object.assign(
   {},

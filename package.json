@@ -5,6 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "NODE_ENV=${NODE_ENV-dev} nodemon app.js",
+    "migrate": "knex migrate:latest",
+    "mysql:restart": "mysql.server restart",
     "test": "test"
   },
   "repository": {
@@ -23,25 +25,22 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
+    "bookshelf": "^0.10.3",
+    "boom": "^4.3.1",
     "config": "^1.25.1",
     "express": "^4.15.2",
     "fs": "0.0.1-security",
-    "jsonfile": "^3.0.0",
     "knex": "^0.13.0",
     "lodash": "^4.17.4",
-    "minimist": "^1.2.0",
     "mysql": "^2.13.0",
-    "passport": "^0.3.2",
     "path": "^0.12.7",
-    "swagger-node-express": "^2.1.3",
     "swagger-tools": "^0.10.1",
     "swagger-ui": "^3.0.8",
     "util": "^0.10.3"
   },
   "devDependencies": {
+    "bunyan": "^1.8.10",
     "debug": "^2.6.6",
-    "minify": "^2.0.13",
-    "nodemon": "^1.11.0",
-    "uglify": "^0.1.5"
+    "nodemon": "^1.11.0"
   }
 }
