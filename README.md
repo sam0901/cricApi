@@ -1,7 +1,7 @@
 # cricApi
 
 ## setup
-1. install mysql locally and username root password ' '
+1. install mysql locally and username root password ' ' `space`
 2. start mysql server
 
 ## running Api
