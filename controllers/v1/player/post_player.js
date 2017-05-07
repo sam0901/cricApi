@@ -3,7 +3,7 @@ const Player = require('../../../models/players');
 
 module.exports = (req, res) => {
   const player = new Player(req.swagger.params.body.value);
-  player.save()
+  return player.save()
     .then(() => Player
       .where({ email: player.attributes.email })
       .fetch()

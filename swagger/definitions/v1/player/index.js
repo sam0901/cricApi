@@ -12,6 +12,10 @@ module.exports = {
     email: {
       type: 'string',
       description: 'email'
+    },
+    username: {
+      type: 'string',
+      description: 'username'
     }
   }
 };

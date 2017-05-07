@@ -10,6 +10,6 @@ module.exports = {
   produces: [
     "application/json"
   ],
-  parameters: parameters,
-  responses: responses
+  parameters,
+  responses
 };
